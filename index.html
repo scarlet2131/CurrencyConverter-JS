@@ -1,0 +1,53 @@
+<!-- Name : Monisha Ranjan
+Student Id : c0914148 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container for the entire currency converter -->
+    <div class="converter-container">
+        <!-- Header with the title and subtitle -->
+        <header class="blue-background">
+            <h1>US Dollar to Canadian Dollar</h1>
+            <h3>Convert USD to CAD at the real exchange rate</h3>
+        </header>
+
+        <!-- Row for conversion input and output -->
+        <div class="conversion-row">
+            <!-- Input section for the amount being converted -->
+            <div class="currency-input">
+                <input type="number" id="usdAmount" placeholder="Amount">
+                <!-- Displays the current 'from' currency and flag -->
+                <div class="custom-select" id="fromCurrency">
+                    <div class="select-selected">
+                        <img src="images/cad.jpg" alt="USD" class="flag"><span>CAD</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Icon to switch between 'from' and 'to' currencies -->
+            <img id="convertIcon" src="images/arrow.png" alt="Exchange Icon" class="exchange-icon">
+
+            <!-- Output section for the converted amount -->
+            <div class="currency-input">
+                <input type="number" id="cadAmount" placeholder="Converted to" readonly>
+                <!-- Displays the current 'to' currency and flag -->
+                <div class="custom-select" id="toCurrency">
+                    <div class="select-selected">
+                        <img src="images/us.jpg" alt="CAD" class="flag"><span>USD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button to perform the conversion -->
+        <button id="convertButton">Convert</button>
+    </div>
+
+    <script src="currencyConverter.js"></script>
+</body>
+</html>
